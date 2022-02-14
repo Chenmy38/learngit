@@ -35,4 +35,8 @@ git reset --hard HEAD^
 # To restore the newer version of git, you must get the id of the commit command. You can find it using the 'git reflog' command.
 git reflog
 git reset --hard 83e7
-
+# Understanding the stage of git.
+touch LIENSE
+git status  # The LICENSE file is listed as Untracked files. It means we have not added this file to the git repository.
+# Add the modified readme.txt and the LICENSE files to the stage.
+git add LICENSE readme.txt
