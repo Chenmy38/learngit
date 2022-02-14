@@ -22,3 +22,4 @@ git diff readme.txt
 git add readme.txt
 git status
 git commit -m "I modify the file to record the process of learning git."
+# Check the status again.
