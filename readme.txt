@@ -32,3 +32,7 @@ git log --pretty=oneline
 # The previous version is marked as HEAD^.
 # The previous 100 version is marked as HEAD-100.
 git reset --hard HEAD^
+# To restore the newer version of git, you must get the id of the commit command. You can find it using the 'git reflog' command.
+git reflog
+git reset --hard 83e7
+
