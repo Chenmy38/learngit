@@ -23,3 +23,12 @@ git add readme.txt
 git status
 git commit -m "I modify the file to record the process of learning git."
 # Check the status again.
+git status
+# Check the log of git commit.
+git log
+git log --pretty=oneline
+# Reset git to a earlier version.
+# The present version is marked as HEAD.
+# The previous version is marked as HEAD^.
+# The previous 100 version is marked as HEAD-100.
+git reset --hard HEAD^
