@@ -48,3 +48,13 @@ git commit -m "understand how stage works"
 git diff HEAD -- readme.txt
 git add readme.txt
 git commit -m 'Git tracks changes instead of files'
+# Suppose you make a mistake in the working directory and you have saved it. Now you want to discard all changes made in the working directory.
+git restore readme.txt
+# If you have staged the changes, you need to unstage the file first and then discard changes made in the working directory.
+git add readme.txt
+# To unstage a file:
+git status
+git restore --staged readme.txt
+git restore readme.txt
+git add readme.txt
+git commit -m 'Add a file and delete it.'
