@@ -36,7 +36,15 @@ git reset --hard HEAD^
 git reflog
 git reset --hard 83e7
 # Understanding the stage of git.
-touch LIENSE
-git status  # The LICENSE file is listed as Untracked files. It means we have not added this file to the git repository.
+touch LICENSE
+git status  # The LICENSE file is marked as Untracked files. It means we have not added this file to the git repository.
 # Add the modified readme.txt and the LICENSE files to the stage.
 git add LICENSE readme.txt
+git status  # Now the LICENSE file is marked as a new file. It has been added to the stage.
+git commit -m "understand how stage works"
+# Manage changes. Remember git keep track on changes instead of files.
+# Check differences between the readme.txt in the working directory and the readme.txt in the stage.
+# Every time we make a change, we need to add it to the stage before we commit it, otherwise the change will not be tracked.
+git diff HEAD -- readme.txt
+git add readme.txt
+git commit -m 'Git tracks changes instead of files'
