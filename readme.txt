@@ -56,5 +56,7 @@ git add readme.txt
 git status
 git restore --staged readme.txt
 git restore readme.txt
-git add readme.txt
+# Delete a file.
+touch readme.md
+git add readme.md readme.txt
 git commit -m 'Add a file and delete it.'
