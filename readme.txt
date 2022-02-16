@@ -60,3 +60,13 @@ git restore readme.txt
 touch readme.md
 git add readme.md readme.txt
 git commit -m 'Add a file and delete it.'
+# Now remove the readme.md file
+rm readme.md
+git status
+# To restore mistakenly deleted files:
+git restore readme.md 
+# To eliminate readme.md:
+rm readme.md
+git rm readme.md
+git status
+git commit -m 'Delete a file from the repository'
