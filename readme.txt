@@ -4,7 +4,9 @@ Git is free.
 sudo apt install Git
 # Configure Git.
 git config --global user.name "cmy"
-git config --global user.email "chenmingyi@nibs.ac.cn"
+git config --global user.email "chenmy38@gmail.com"
+git config user.email
+git config user.name
 # Create a repository.
 mkdir mygit
 cd mygit
@@ -70,3 +72,5 @@ rm readme.md
 git rm readme.md
 git status
 git commit -m 'Delete a file from the repository'
+# Make a SSH key.
+ssh-keygen -t rsa -C "chenmy38@gmail.com"
