@@ -74,3 +74,11 @@ git status
 git commit -m 'Delete a file from the repository'
 # Make a SSH key.
 ssh-keygen -t rsa -C "chenmy38@gmail.com"
+# Your private key is stored in the ~/.ssh/id_rsa.pub
+# Link the local repository to github.
+git remote add origin git@github.com:chenmy38/learngit.git
+# Push local repository.
+git push -u origin master
+# Delete a remote repository.
+git remote -v
+git remote rm origin
