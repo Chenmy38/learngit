@@ -83,4 +83,4 @@ git push -u origin master
 git remote -v
 git remote rm origin
 # Clone a remote repository
-# I add this sentence remotely.
+# I add this sentence remotely on the github.
