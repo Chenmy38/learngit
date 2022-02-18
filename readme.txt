@@ -82,4 +82,5 @@ git push -u origin master
 # Delete a remote repository.
 git remote -v
 git remote rm origin
+# Clone a remote repository
 # I add this sentence remotely.
