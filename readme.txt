@@ -120,3 +120,7 @@ git branch -d feature1
 git switch -c dev
 git add readme.txt
 git commit -m 'add merge'
+git switch master
+git merge --no-ff -m 'merge with no fast-forward'
+git log --graph --pretty=oneline --abbrev-commit
+aaaaaaaaaaaaaaaaaaaaaa
