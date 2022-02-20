@@ -102,3 +102,9 @@ git switch master
 git merge dev
 # After merging we can delete the dev branch.
 git branch -d dev
+# Solve conflict of merge
+git switch -c feature1
+# Creating a new branch is simple & fast.
+git add readme.txt
+git commit -m 'AND simple'
+git switch master
