@@ -85,6 +85,7 @@ git pull origin branch_name
 # Delete a remote repository.
 git remote -v
 git remote rm origin
+git push origin --delete dev
 # Clone a remote repository. Note you can only see the master branch of remote repository.
 git clone SSH_address/https_address
 # To clone the other branch of remote repository:
