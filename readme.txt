@@ -116,3 +116,7 @@ git add readme.txt
 git commit -m 'conflict fixed'
 git log --graph --pretty=oneline --abbrev-commit
 git branch -d feature1
+# Manage branches.
+git switch -c dev
+git add readme.txt
+git commit -m 'add merge'
