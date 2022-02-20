@@ -94,3 +94,6 @@ git switch -c dev
 # Check the current branch.
 git branch
 git add readme.txt
+git commit -m 'Branch test'
+# Switch back to the master branch.
+git switch master
