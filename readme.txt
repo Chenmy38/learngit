@@ -106,5 +106,5 @@ git branch -d dev
 git switch -c feature1
 # Creating a new branch is simple & fast.
 git add readme.txt
-git commit -m 'AND simple'
+git commit -m '& simple'
 git switch master
