@@ -97,3 +97,8 @@ git add readme.txt
 git commit -m 'Branch test'
 # Switch back to the master branch.
 git switch master
+# All changes we made in the dev branch are lost.
+# To merge the dev branch with current branch:
+git merge dev
+# After merging we can delete the dev branch.
+git branch -d dev
