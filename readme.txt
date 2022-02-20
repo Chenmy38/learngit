@@ -120,3 +120,22 @@ git branch -d feature1
 git switch -c dev
 git add readme.txt
 git commit -m 'add merge'
+git switch master
+git merge --no-ff -m 'merge with no fast-forward'
+git log --graph --pretty=oneline --abbrev-commit
+# Remember you need to add and commit a change before switching to another branch. 
+# Here is a problem. When you do not finish the work on the current and you have to switch to another branch, what should you do?
+# You can save the work on the current branch temporarily and switch to another branch to complete urgent tasks. 
+git stash
+# After finishing urgent tasks, you then switch back to working branch, and invoke saved workspace.
+git stash apply
+# Or
+git stash pop
+# You can stash several times and invoke the specific stash.
+git stash apply stash@{0}
+git stash list
+
+
+
+
+
