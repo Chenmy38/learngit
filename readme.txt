@@ -79,7 +79,6 @@ ssh-keygen -t rsa -C "chenmy38@gmail.com"
 git remote add origin git@github.com:chenmy38/learngit.git
 # Push local repository.
 git push -u origin master
-# I add this sentence remotely on the github.
 # Fetch and pull new changes to update local repository.
 git fetch origin master
 git pull origin master
