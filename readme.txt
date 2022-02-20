@@ -134,6 +134,8 @@ git stash pop
 # You can stash several times and invoke the specific stash.
 git stash apply stash@{0}
 git stash list
+# To delete a unmerged branch:
+git branch -D branch_name
 
 
 
