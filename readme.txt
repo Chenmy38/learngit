@@ -79,14 +79,16 @@ ssh-keygen -t rsa -C "chenmy38@gmail.com"
 git remote add origin git@github.com:chenmy38/learngit.git
 # Push local repository.
 git push -u origin master
-# Fetch and pull new changes to update local repository.
-git fetch origin master
-git pull origin master
+# Pull new changes to update local repository. When you have conflict with remote repository, you need to pull and fix the conflict before you push.
+git pull origin master  # Essentially, this command tries to merge origin master with local master. 
+git pull origin branch_name
 # Delete a remote repository.
 git remote -v
 git remote rm origin
-# Clone a remote repository
+# Clone a remote repository. Note you can only see the master branch of remote repository.
 git clone SSH_address/https_address
+# To clone the other branch of remote repository:
+git switch -c local_name origin/remote_name
 # HEAD points to current branch, master.
 # Fork a new branch called dev and move to the dev branch.
 git switch -c dev  
@@ -135,7 +137,28 @@ git stash apply stash@{0}
 git stash list
 # To delete a unmerged branch:
 git branch -D branch_name
-
+# Add a tag
+# Note tags are displayed together with commits.
+git switch master
+git tag v1.0
+# Check all tags which are displayed temporally.
+git tag 
+# Add a tag to a specific commit.
+git log --pretty=oneline --abbrev-commit
+git tag v2.0 d386954
+# Show details of a tag.
+git show tag_name
+git show v2.0
+# Add a tag with more information.
+git tag -a v3.0 -m 'More details about tags.' 95398d9
+git show v3.0
+# Delete a tag.
+git tag -d v1.0
+git push origin :refs/tags/v1.0  # Delete a remote tag.
+# Push a tag.
+git push origin v2.0
+# Push all tags.
+git push origin --tags
 
 
 
