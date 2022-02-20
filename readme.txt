@@ -114,3 +114,5 @@ git commit -m 'AND simple'
 # Creating a new branch is quick and simple.
 git add readme.txt
 git commit -m 'conflict fixed'
+git log --graph --pretty=oneline --abbrev-commit
+git branch -d feature1
