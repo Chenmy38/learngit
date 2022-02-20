@@ -88,4 +88,9 @@ git remote -v
 git remote rm origin
 # Clone a remote repository
 git clone SSH_address/https_address
-
+# HEAD points to current branch, master.
+# Fork a new branch called dev and move to the dev branch.
+git switch -c dev  
+# Check the current branch.
+git branch
+git add readme.txt
