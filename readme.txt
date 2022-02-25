@@ -160,7 +160,8 @@ git push origin :refs/tags/v1.0  # Delete a remote tag.
 git push origin v2.0
 # Push all tags.
 git push origin --tags
-
+# To rename a file managed by git:
+git mv old_file_name new_file_name
 
 
 
